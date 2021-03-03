@@ -1,9 +1,15 @@
- var cognomi = ["Bianchi", "Rossi", "Duzioni", "Balsano", "Verdi"];
+ var cognomi = ["Bianchi", "Rossi", "Duzioni", "Balsano", "Verdi"],
+   lettere = /^[a-zA-Z]+$/;
 
- var cognomeUtente = prompt("Qual è il tuo cognome?");
+ do {
+   var cognomeUtente = prompt("Qual è il tuo cognome?");
+ }
+ while (!cognomeUtente.match(lettere));
+
  var cognomeCap = cognomeUtente.charAt(0).toUpperCase() + cognomeUtente.slice(1);
  cognomi.push(cognomeCap);
  cognomi.sort();
+
  for (var i = 0; i < cognomi.length; i++) {
    document.getElementById("cognomiNum").innerHTML += "<li>" + cognomi[i] + "</li>";
  }
