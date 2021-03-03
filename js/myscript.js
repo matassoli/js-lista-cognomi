@@ -4,10 +4,10 @@
  cognomi.push(cognomeUtente);
  cognomi.sort();
 
- // console.log(cognomi);
- // console.log(cognomi.indexOf(cognomeUtente));
 
 
  for (var i = 0; i < cognomi.length; i++) {
    document.getElementById("cognomiNum").innerHTML += "<li>" + cognomi[i] + "</li>";
  }
+var cognomePos = parseInt(cognomi.indexOf(cognomeUtente));
+ document.getElementById("cognomePos").innerHTML = cognomePos + 1;
