@@ -6,7 +6,7 @@
  }
  while (!cognomeUtente.match(lettere));
 
- var cognomeCap = cognomeUtente.charAt(0).toUpperCase() + cognomeUtente.slice(1);
+ var cognomeCap = cognomeUtente.charAt(0).toUpperCase() + cognomeUtente.slice(1).toLowerCase();
  cognomi.push(cognomeCap);
  cognomi.sort();
 
