@@ -13,5 +13,5 @@
  for (var i = 0; i < cognomi.length; i++) {
    document.getElementById("cognomiNum").innerHTML += "<li>" + cognomi[i] + "</li>";
  }
- var cognomePos = parseInt(cognomi.indexOf(cognomeCap));
+ var cognomePos = cognomi.indexOf(cognomeCap);
  document.getElementById("cognomePos").innerHTML = cognomePos + 1;
